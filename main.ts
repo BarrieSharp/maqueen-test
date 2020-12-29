@@ -15,6 +15,10 @@ basic.showLeds(`
     # . # . #
     . # # # .
     `)
+// Display light level
+basic.forever(function () {
+    basic.showNumber(input.lightLevel())
+})
 basic.forever(function () {
     RED = 0
     GREEN = 0
